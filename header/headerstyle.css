@@ -57,7 +57,9 @@
   background: #cccccc; 
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body
 {
@@ -240,6 +242,12 @@ body
 .podcast-journey p
 {
 	font-size: 20px;
+}
+
+.podcast-journey p a
+{
+	color: blue;
+	font-weight: 600;
 }
 
 .my-pod-heading

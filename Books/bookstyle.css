@@ -1,0 +1,411 @@
+/**********SCROLLBAR**********/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+ /* background: #606060;*/
+ /*background: #8a8a8a;*/ 
+ background: #b3b3b3;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /*background: #cccccc;*/
+  background: #8a8a8a; 
+}
+
+::-ms-scrollbar {
+  width: 10px;
+}
+
+::-ms-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-ms-scrollbar-thumb {
+  background: #606060; 
+  border-radius: 10px;
+  padding: 1px;
+}
+
+::-ms-scrollbar-thumb:hover {
+  background: #cccccc; 
+}
+
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-moz-scrollbar-thumb {
+  background: #606060; 
+  border-radius: 10px;
+  padding: 1px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #cccccc; 
+}
+
+body
+{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	margin-left: 0;
+}
+
+.head
+{
+	display: flex;
+	height: 80px;
+	width: 100%;
+	justify-content: space-between;
+	column-gap: 8%;
+	top: 0px;
+	background-color: rgba(10,10,10,0.99);
+	position: fixed;
+	box-shadow: none;
+	z-index: 99999;
+}
+
+.left-head
+{
+	width: 5%;
+	margin: 0;
+}
+
+.head-logo
+{
+	height: 50px;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.right-head
+{
+	display: flex;
+	width: 1200px;
+	justify-content: center;
+	align-items: center;
+	column-gap: 6%;
+	margin-right: 50px: 
+}
+
+.blog, .podcast,
+.poetry,
+.workshop,
+.public-speaking,
+.books,
+.my-story,
+.contacts{
+	border:none;
+	background-color: transparent;
+	font-size: 18px;
+	/*width: fit-content;*/
+	/*overflow: hidden;*/
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+}
+
+.animated-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animated-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cover
+{
+	height: 700px;
+}
+
+.cover-img
+{
+	height: 100%;
+	width: 100%;
+}
+
+/********************MAIN PAGE*******************/
+
+.book-main-heading
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.book-main-heading h1
+{
+	font-family: fantasy;
+	font-size: 5em;
+	font-weight: 100;
+	border-bottom: 2px solid #1000AF;
+	border-right: 2px solid #1000AF;
+	width: 700px;
+	height: 100px;
+	letter-spacing: 7px;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-box-shadow: 4px 4px 5px #888888;
+	-ms-box-shadow: 4px 4px 5px #888888;
+	-webkit-box-shadow: 4px 4px 5px #888888;
+	-o-box-shadow: 4px 4px 5px #888888;
+	box-shadow: 6px 6px 7px #3421F1;
+	margin: 0px;
+}
+
+.book-main-whole
+{
+	margin: 50px 0px 50px 0px;
+}
+
+.book-back
+{
+	background-image: url(img/book_background.jpg);
+}
+
+.book-about-whole
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+.book-about-img
+{
+	/*margin-right: -100px;*/
+	height: 700px;
+	width: 300em;
+}
+
+.book-about-img img
+{
+	/*height: 700px;
+	width: 1000px;*/
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.book-about-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*padding:40px;*/
+	margin:100px 150px 50px -100px;
+	color: #000;
+}
+
+.book-about-content h2
+{
+	font-size: 30px;
+	margin-top:-60px; 
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 5px;
+	font-weight: 900;
+	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.book-about-content h2 hr
+{
+	width: auto;
+	/*border-top-width: 7px;*/
+	border-top: 7px solid #A29700; 
+	border-top-right-radius: 50%; 
+	border-top-left-radius: 50%;
+	/*top: 0px;
+    right: 0px;
+    left: 0px;*/
+    margin: 0;
+}
+
+.book-about-content p
+{
+	font-size: 20px;
+}
+
+.amazon
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.amazon img
+{
+	height: 100px;
+	width: 200px;
+}
+
+.book-imgs
+{
+	/*margin-right: -100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*height: 700px;
+	width: 55em;*/
+	margin: -150px 30px 50px 30px;
+	padding: 20px;
+	/*font-family: "Twinkle Star";*/
+}
+
+.book-imgs img
+{
+	/*height: 700px;
+	width: 1000px;*/
+	height: 700px;
+	width: 55em;
+	object-fit: cover;
+}
+
+.book-imgs h1
+{
+	font-size: 70px;
+	margin-top:-60px; 
+	letter-spacing: 3px;
+	color: #000;
+	font-weight: 700;
+	/*font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;*/
+	font-family: "Twinkle Star",sans-serif;
+}
+
+.book-imgs h1 hr
+{
+	width: auto;
+	/*border-top-width: 7px;*/
+	border-top: 7px solid #fff; 
+	border-top-right-radius: 50%; 
+	border-top-left-radius: 50%;
+	/*top: 0px;
+    right: 0px;
+    left: 0px;*/
+    margin: 0;
+}
+
+.book-poster
+{
+	margin: -100px 0px 0px 0px;
+}
+
+.book-poster img
+{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.my-poems
+{
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+.my-poems-heading
+{
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	font-size: 30px;
+	margin-top:30px; 
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 5px;
+	font-weight: 900;
+	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.my-poems-heading h2 hr
+{
+	width: auto;
+	/*border-top-width: 7px;*/
+	border-top: 7px solid #fff; 
+	border-top-right-radius: 50%; 
+	border-top-left-radius: 50%;
+	/*top: 0px;
+    right: 0px;
+    left: 0px;*/
+    margin: 0;
+}
+
+.my-poems-content
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+.my-poems-ch
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	padding: 0px 50px 0px 50px;
+	background-color: #fdefb7;
+	border-radius: 60px;
+	margin-left: 70px;
+	height: 400px;
+}
+
+.my-poems-ch-list
+{
+	height: 9em;
+	padding: -10px 30px 30px 30px;
+	font-size: 25px;
+	border-radius: 30px;
+	background-color: #fff9e0;
+	height: 260px;
+}
+
+.my-poems-ch-list ul li
+{
+	font-family: "Poppins",sans-serif;
+}
+
+.my-poems-img
+{
+	/*height: 500px;
+	width: 900px;*/
+	margin-right: 50px;
+}
+
+.my-poems-img img
+{
+	height: 600px;
+	width: 900px;
+}

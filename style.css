@@ -123,6 +123,7 @@ body
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
+	color: #fff;
 }
 
 .animated-underline:after {
@@ -133,7 +134,7 @@ body
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #fff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -145,11 +146,19 @@ body
 
 /*MID BAR*/
 
-.mid-img
+.mid-bar
 {
+	/*width: 200em;*/
+	/*height: 600px;*/
+	/*object-fit: cover;*/
+}
+
+.mid-video
+{
+	height: 100%;
 	width: 100%;
-	height: 700px;
 	object-fit: cover;
+	/*width: 100%;*/
 }
 
 .main-page
@@ -589,7 +598,7 @@ body
 	color: #000;
 }
 
-.email-me
+/*.email-me
 {
 	display: flex;
 	flex-direction: column;
@@ -602,4 +611,14 @@ body
 	justify-content: center;
 	align-items: center;
 	font-size: 25px;
+}*/
+
+.email 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #000;
+	margin-top: -40px;
 }
