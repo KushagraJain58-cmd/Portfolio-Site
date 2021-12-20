@@ -80,7 +80,7 @@ body
 	/*background: linear-gradient(55deg, transparent 0%, #000 70%, #000 85%);*/
 	/*background-color: rgba(10,10,10,0.99);*/
 	/*background-image: linear-gradient(#fff, #ccc);*/
-	position: fixed;
+	position: absolute;
 	box-shadow: none;
 	z-index: 99999;
 }
@@ -117,7 +117,7 @@ body
 .contacts{
 	border:none;
 	background-color: transparent;
-	font-size: 18px;
+	font-size: 22px;
 	/*width: fit-content;*/
 	overflow: hidden;
 	display: inline-block;
@@ -145,13 +145,6 @@ body
 }
 
 /*MID BAR*/
-
-.mid-bar
-{
-	/*width: 200em;*/
-	/*height: 600px;*/
-	/*object-fit: cover;*/
-}
 
 .mid-video
 {
@@ -226,7 +219,7 @@ body
 .ab-vid
 {
 	/*margin-left: 50px;*/
-	height: 500px;
+	height: 600px;
 	width: 700px;
 	object-fit: cover;
 }

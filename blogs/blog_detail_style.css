@@ -202,3 +202,355 @@ body
 	box-shadow: rgba(228, 207, 44, 0.919) 0px 50px 100px -20px, rgba(247, 6, 6, 0.974) 0px 30px 60px -30px, rgba(8, 238, 215, 0.96) 0px -2px 6px 0px inset;
 	font-weight: bold;
 }
+
+/********************MEDIA QUERY***********************/
+
+@media (max-width: 1384px)
+{
+	.left-head
+	{
+		width: 5%;
+		margin: 0;
+	}
+
+	.head-logo
+	{
+		height: 40px;
+		width: 140px;
+	}
+
+	.right-head
+	{
+		width: 1000px;
+		/*justify-content: center;
+		align-items: center;*/
+		column-gap: 4%;
+	}
+
+}
+
+@media (max-width: 1203px)
+{
+	.right-head
+	{
+	width: 900px;
+	/*justify-content: center;
+	align-items: center;
+	column-gap: 6%;*/
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+	font-size: 18px;
+	}
+}
+
+@media (max-width: 1094px)
+{
+	.right-head
+	{
+		width: 700px;
+		/*justify-content: center;
+		align-items: center;
+		column-gap: 6%;*/
+	}
+	.heading
+	{
+		font-size:15px; 
+	}
+	.cycle-img-detail
+	{
+		width: 30em;
+	}
+	.guest-img-detail
+	{
+		width: 30em;
+	}
+	.detail-written
+	{
+	margin: 50px 40px 50px 40px;
+	padding: 10px 20px 10px 20px;
+	}
+}
+
+@media (max-width: 899px)
+{
+	.head-logo
+	{
+		/*height: 50px;
+		width: 150px;
+		margin-top: 20px;*/
+		margin-left: 20px;
+	}
+	.right-head
+	{
+		width: 800px;
+		/*justify-content: center;
+		align-items: center;*/
+		font-size: 15px;
+		column-gap: 2%;
+	}
+}
+
+@media (max-width: 856px)
+{
+	.head
+	{
+		height: 70px;
+		column-gap: 10%;
+	}
+	.right-head
+	{
+		width: 900px;
+		/*justify-content: center;
+		align-items: center;*/
+		column-gap: 2%;
+		justify-content: flex-end;
+		align-items: center;
+		/*padding: 10px;*/
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+	.detail-written
+	{
+	margin: 50px 30px 50px 30px;
+	padding: 10px 40px 10px 40px;
+	}
+}
+
+@media (max-width: 823px)
+{
+	.head
+	{
+		column-gap: 10%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+	.right-head
+	{
+		width: 900px;
+		/*justify-content: center;
+		align-items: center;*/
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		column-gap: 2%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 687px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 13px;
+	}
+	.left-head
+	{
+		/*display: flex;
+		justify-content: center;
+		align-items: center;*/
+	}
+	.head-logo
+	{
+	height: 30px;
+	width: 100px;
+	margin-left: 20px;
+	margin-top: 20px;
+	}
+	.detail-written
+	{
+	margin: 50px 10px 50px 10px;
+	padding: 10px 20px 10px 20px;
+	}
+}
+
+@media (max-width: 600px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 11px;
+	}
+	
+	.head-logo
+	{
+	height: 25px;
+	width: 90px;
+	margin-left: 10px;
+	margin-top: 20px;
+	}
+	.heading
+	{
+		margin: 100px 50px 50px 50px;
+	}
+	
+}
+
+@media (max-width: 518px)
+{
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 10px;
+	}
+	/*.heading
+	{
+		margin: 150px 50px 50px 50px;
+	}*/
+	.detail-written
+	{
+	margin: 50px 10px 50px 10px;
+	padding: 10px 20px 10px 20px;
+	font-size: 15px;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.head-logo
+	{
+		height: 20px;
+		width: 80px;
+		margin-left: 7px;
+		margin-top: 23px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 9px;
+	}
+	.heading
+	{
+		font-size: 12px;
+	}
+	.cycle-img-detail
+	{
+		width: 25em;
+	}
+	.guest-img-detail
+	{
+		width: 25em;
+	}
+	.detail-written
+	{
+	margin: 50px 5px 50px 5px;
+	padding: 10px 10px 10px 10px;
+	font-size: 12px;
+	}
+}
+
+@media (max-width: 434px)
+{
+	.head
+	{
+		height: 40px;
+	}
+	.head-logo
+	{
+	height: 20px;
+	width: 80px;
+	margin-left: 7px;
+	margin-top: 15px;
+	}
+	.right-head
+	{
+		column-gap: 1%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 7px;
+	}
+	.heading
+	{
+		font-size: 7px;
+		margin: 50px 50px 50px 50px;
+	}
+
+}
+
+@media (max-width: 367px)
+{
+	.head-logo
+	{
+	/*height: 20px;*/
+	width: 65px;
+	/*margin-left: 7px;
+	margin-top: 15px;*/
+	}
+	.detail-written
+	{
+	/*margin: 50px 10px 50px 10px;
+	padding: 10px 20px 10px 20px;*/
+	font-size: 8px;
+	}
+}
+
+@media (max-width: 347px)
+{
+	.head-logo
+	{
+		/*display: none;*/
+		width: 50px;
+	}
+	.right-head
+	{
+		column-gap: 0;
+	}
+}
