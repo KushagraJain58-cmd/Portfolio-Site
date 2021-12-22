@@ -211,15 +211,18 @@ body
 {
 	width: 100%;
 	/*background-color: #0c71c3;*/
-	background-image: linear-gradient(#0c71c3,#5F97F1);*//*#478DFC
+	/*background-image: linear-gradient(#0c71c3,#5F97F1);*//*#478DFC
 	/*background: linear-gradient(to bottom right,#F22F2F,#FF5D5D);*/
-	margin: 100px 30px 100px 0px;
+	margin: 100px 0px 100px 0px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*padding: 50px;*/
 }
 .ab-vid
 {
 	/*margin-left: 50px;*/
-	height: 600px;
+	height: 700px;
 	width: 700px;
 	object-fit: cover;
 }
@@ -240,6 +243,7 @@ body
 	align-items: center;
 	margin-bottom: 100px; 
 	padding-top: 60px;
+	background-image: linear-gradient(#0c71c3,#5F97F1);
 }
 
 .about-heading h2

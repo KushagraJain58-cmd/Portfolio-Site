@@ -583,6 +583,26 @@ body
 
 }
 
+@media (max-width: 1250px)
+{
+	.soul-logo img
+	{
+		height: 400px;
+		width: 400px;
+	}
+	.spotify
+	{
+		width: 90%;
+	}
+	.spotify-link
+	{
+	/*border:none;*/
+	height: 100%;
+	width: 100%;
+	margin-bottom: 50px;
+	}
+}
+
 @media (max-width: 1203px)
 {
 	.right-head
@@ -829,6 +849,16 @@ body
 	margin:0px -10px 0px -10px;
 	/*font-size: 20px;*/
 	}
+	.image-icon
+	{
+		height: 5em;
+		width: 5em;
+	}
+	.soul-logo img
+	{
+	height: 300px;
+	width: 300px;
+	}
 }
 
 @media (max-width: 600px)
@@ -865,6 +895,14 @@ body
 		margin: 100px 180px 50px 50px;
 		/*padding: 50px 50px 50px 50px;*/
 	}
+	.my-pod-heading h2
+	{
+		font-size: 30px;
+	}
+	.my-pod-content
+	{
+		margin-top: -10px;
+	}
 	.my-pod-season img
 	{
 		height: 100%;
@@ -882,6 +920,20 @@ body
 	.my-podcast-ink
 	{
 		margin: 0px 50px 0px 50px;
+	}
+}
+@media (max-width: 518px)
+{
+	.image-icon
+	{
+		height: 4em;
+		width: 4em;
+	}
+	.link-content
+	{
+	/*display: flex;*/
+	 margin: 5px 10px 10px 20px;
+	/*justify-content: center;*/
 	}
 }
 
@@ -991,6 +1043,14 @@ body
 	{
 		margin: 0px 50px 0px 50px;
 	}
+	.contact-btn button
+	{
+		font-size: 1.5em;
+	}
+	.email
+	{
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 434px)
@@ -1024,6 +1084,10 @@ body
 	{
 		margin-left: -20px;
 	}
+	.my-pod-heading h2
+	{
+		font-size: 25px;
+	}
 	.my-pod-season h3
 	{
 		font-size: 20px;
@@ -1040,6 +1104,23 @@ body
 	{
 	font-size: 15px;
 	margin: -10px 0px 10px 10px;
+	}
+	.soul-logo img
+	{
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media (max-width: 377px)
+{
+	.contact-btn button
+	{
+		font-size: 1.5em;
+	}
+	.email
+	{
+		font-size: 15px;
 	}
 }
 
@@ -1065,9 +1146,24 @@ body
 	{
 		font-size: 15px;
 	}
+	.pod-available-heading h2
+	{
+		font-size: 20px;
+	}
 	.podcast-journey p
 	{
 		font-size: 12px;
+	}
+	.image-icon
+	{
+		height: 3.5em;
+		width: 3.5em;
+	}
+	.link-content
+	{
+	/*display: flex;*/
+	 margin: 5px 10px 10px 10px;
+	/*justify-content: center;*/
 	}
 }
 
