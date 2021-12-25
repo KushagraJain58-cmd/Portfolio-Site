@@ -579,7 +579,7 @@ body
 	.my-story,
 	.contacts
 	{
-		font-size: 7px;
+		font-size: 9px;
 	}
 
 }
@@ -605,5 +605,15 @@ body
 	.right-head
 	{
 		column-gap: 0;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 8px;
 	}
 }

@@ -181,6 +181,7 @@ body
 	height: 100%;
 	width: 100%;
 	border-radius: 30px;
+	object-fit: cover;
 }
 
 .my-story-content
@@ -206,7 +207,7 @@ body
 .my-story-heading
 {
 	font-size: 25px;
-	margin-top:-60px; 
+	/*margin-top:-60px; */
 	color: #fff;
 	text-transform: uppercase;
 	color: #fff;
@@ -244,6 +245,50 @@ body
 	margin: 130px 40px 50px 10px;
 }
 
+.ed-my-story-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(#0c71c3,#5F97F1);
+	margin: 0px 20px 0px 30px;
+	border-radius: 30px;
+}
+
+.ed-my-story-content:hover
+{	
+	z-index: 2;
+	box-shadow: rgba(228, 207, 44, 0.919) 0px 50px 100px -20px, rgba(247, 6, 6, 0.974) 0px 30px 60px -30px, rgba(8, 238, 215, 0.96) 0px -2px 6px 0px inset;
+	font-weight: bold;
+	background-image: linear-gradient(#0b5c9e,#5F97F1);
+
+}
+
+.ed-my-story-heading
+{
+	font-size: 25px;
+	/*margin-top:-60px; */
+	color: #fff;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.ed-my-story-heading h2 hr
+{
+	width: auto;
+	/*border-top-width: 7px;*/
+	border-top: 7px solid #0C2BD3; 
+	border-top-right-radius: 50%; 
+	border-top-left-radius: 50%;
+	/*top: 0px;
+    right: 0px;
+    left: 0px;*/
+    margin: 0;
+}
+
+
 .ed-back-img
 {
 	height: 40em;
@@ -255,6 +300,7 @@ body
 	height: 100%;
 	width: 100%;
 	border-radius: 30px;
+	object-fit: cover;
 	/*object-fit: cover;*/
 }
 
@@ -271,14 +317,25 @@ body
 .wt-love-whole
 {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	/*align-items: center;
+	justify-content: center;*/
+}
+
+.wt-love-img
+{
+	height: 20em;
+	width: 20em;
+	margin-bottom: 20px;
+}
+.wt-love-img2
+{
+	margin-bottom: 0px;
 }
 
 .speaking
 {
-	height: 20em;
-	width: 20em;
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	border-radius: 20px;
 }
@@ -291,11 +348,11 @@ body
 
 .radio
 {
-	height: 20em;
-	width: 20em;
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	border-radius: 50px;
-	margin-bottom: -10px;
+	/*margin-bottom: -10px;*/
 }
 .radio:hover
 {
@@ -311,8 +368,8 @@ body
 	align-items: center;
 	/*background-image: linear-gradient(#0c71c3,#5F97F1);*/
 	background-image: linear-gradient(#4446A1,#7677B0);
-	height: 35em;
-	width: 35%;
+	/*height: 35em;*/
+	width: 40%;
 	margin: 10px 100px 10px 100px;
 	padding: 20px;
 	border-radius: 30px;
@@ -382,6 +439,7 @@ body
 	height: 100%;
 	width: 100%;
 	border-radius: 30px;
+	object-fit: cover;
 }
 
 .pro-back-para
@@ -396,4 +454,761 @@ body
 {
 	color: blue;
 	font-weight: 600;
+}
+
+/********************MEDIA QUERY***********************/
+
+@media (max-width: 1384px)
+{
+	.left-head
+	{
+		width: 5%;
+		margin: 0;
+	}
+
+	.head-logo
+	{
+		height: 40px;
+		width: 140px;
+	}
+
+	.right-head
+	{
+		width: 1000px;
+		/*justify-content: center;
+		align-items: center;*/
+		column-gap: 4%;
+	}
+
+}
+
+@media (max-width: 1203px)
+{
+	.right-head
+	{
+	width: 900px;
+	/*justify-content: center;
+	align-items: center;
+	column-gap: 6%;*/
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+	font-size: 18px;
+	}
+	.wt-love-content
+	{
+		width: 60%;
+		margin: 10px 50px 10px 50px;
+		padding: 20px;
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 1120px)
+{
+	/*.my-story-img
+	{
+	height: 32em;
+	width: 250em;
+	}*/
+	.my-story-content
+	{
+		margin: 0px 0px 0px 10px;
+	}
+	.my-story-heading
+	{
+		font-size: 20px;
+	}
+	.my-story-para
+	{
+		font-size: 20px;
+	}
+	.ed-back-img
+	{
+		height: 37em;
+		width: 170em;
+		margin-left: 20px;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 20px;
+	}
+	.edu-back-para
+	{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1094px)
+{
+	.right-head
+	{
+		width: 700px;
+		/*justify-content: center;
+		align-items: center;
+		column-gap: 6%;*/
+	}
+	.heading
+	{
+		font-size:12px; 
+	}
+	.para p
+	{
+		font-size: 17px;
+	}
+	.wt-love-content
+	{
+		width: 60%;
+		margin: 10px 30px 10px 30px;
+		padding: 20px;
+		border-radius: 30px;
+	}
+	.wt-love-heading
+	{
+		font-size: 25px;
+	}
+	.wt-love-list
+	{
+		font-size: 20px;
+	}
+
+	.wt-love-list ul li
+	{
+		margin: 0px 0 0px 0;
+	}
+	.wt-love-img
+	{
+	height: 18em;
+	width: 18em;
+	margin-bottom: 20px;
+	}
+	.pro-para
+	{
+		padding: 10px 40px 10px 40px;
+	}
+}
+
+@media (max-width: 1024px)
+{
+	.my-story-heading
+	{
+		font-size: 20px;
+	}
+	.my-story-para
+	{
+		font-size: 17px;
+	}
+	.ed-back-img
+	{
+		height: 33em;
+		width: 170em;
+	}
+}
+
+@media (max-width: 950px)
+{
+	.my-story-para
+	{
+	padding: 10px 40px 10px 40px;
+	/*font-size: 20px;
+	color: #fff;
+	font-weight: 400;*/
+	}
+	.ed-my-story-heading
+	{
+		font-size: 18px;
+	}
+	.edu-back-para
+	{
+		font-size: 18px;
+		padding: 10px 40px 10px 40px;
+	}
+	.wt-love-img
+	{
+	height: 15em;
+	width: 15em;
+	}
+	/*.my-story-heading
+	{
+		font-size: 25px;
+	}*/
+
+	.pro-para
+	{
+		padding: 10px 40px 10px 40px;
+	}
+}
+
+@media (max-width: 899px)
+{
+	.head-logo
+	{
+		/*height: 50px;
+		width: 150px;
+		margin-top: 20px;*/
+		margin-left: 20px;
+	}
+	.right-head
+	{
+		width: 800px;
+		/*justify-content: center;
+		align-items: center;*/
+		font-size: 15px;
+		column-gap: 2%;
+	}
+}
+
+@media (max-width: 856px)
+{
+	.head
+	{
+		height: 70px;
+		column-gap: 10%;
+	}
+	.right-head
+	{
+		width: 900px;
+		/*justify-content: center;
+		align-items: center;*/
+		column-gap: 2%;
+		justify-content: flex-end;
+		align-items: center;
+		/*padding: 10px;*/
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 15px;
+	}
+	.edu-back-para
+	{
+		font-size: 15px;
+	}
+	.ed-back-img
+	{
+		height: 31em;
+		width: 170em;
+	}
+	.cover
+	{
+		margin-top: 50px;
+	}
+	.wt-love-content
+	{
+		margin: 10px 10px 10px 10px;
+		padding: 10px;
+	}
+	.wt-love-heading
+	{
+		font-size: 20px;
+	}
+	.wt-love-list
+	{
+		font-size: 17px;
+	}
+
+	.wt-love-list ul li
+	{
+		margin: 0px 0 0px 0;
+	}
+}
+
+@media (max-width: 823px)
+{
+	.head
+	{
+		column-gap: 10%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+	.right-head
+	{
+		width: 900px;
+		/*justify-content: center;
+		align-items: center;*/
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		column-gap: 2%;
+		padding: 10px;
+	}
+	.my-story-whole
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.my-story-img
+	{
+		height: 70%;
+		width: 70%;
+	}
+	.my-story-heading
+	{
+	font-size: 25px;
+	}
+	.my-story-para
+	{
+		padding: 10px 70px 10px 70px;
+		font-size: 20px;
+	}
+	.wt-love-img
+	{
+	height: 12em;
+	width: 12em;
+	}
+	.pro-heading
+	{
+	font-size: 17px;
+	}
+	.pro-back-img
+	{
+		/*height: 35em;*/
+		width: 160em;
+	}
+}
+
+@media (max-width: 750px)
+{
+	.ed-back-whole
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 25px;
+	}
+	.ed-back-img
+	{
+		height: 50em;
+		width: 160em;
+		display: flex;
+		justify-content: center;
+		/*align-items: center;*/
+		margin-top: 20px;
+	}
+	.ed-back-img img
+	{
+		height: 80%;
+		width: 80%;
+	}
+	.edu-back-para
+	{
+		padding: 10px 70px 10px 70px;
+		font-size: 22px;
+	}
+	.pro-back-img
+	{
+		/*height: 35em;*/
+		width: 170em;
+	}
+}
+
+@media (max-width: 687px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 13px;
+	}
+	.left-head
+	{
+		/*display: flex;
+		justify-content: center;
+		align-items: center;*/
+	}
+	.head-logo
+	{
+	height: 30px;
+	width: 100px;
+	margin-left: 20px;
+	margin-top: 20px;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 20px;
+	}
+	.edu-back-para
+	{
+		padding: 10px 40px 10px 40px;
+		font-size: 20px;
+	}
+	.cover
+	{
+		height: 250px;
+	}
+	.wt-love-whole
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.wt-love-img-left
+	{
+		display: flex;
+		column-gap: 6%;
+		margin: 0px 20px 0px 20px;
+	}
+	.wt-love-img-right
+	{
+		display: flex;
+		column-gap: 6%;
+	}
+	.pro-back-img
+	{
+		/*height: 35em;*/
+		width: 180em;
+	}
+}
+
+@media (max-width: 600px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 11px;
+	}
+	
+	.head-logo
+	{
+	height: 25px;
+	width: 90px;
+	margin-left: 10px;
+	margin-top: 20px;
+	}
+	.my-story-heading
+	{
+	font-size: 20px;
+	}
+	.my-story-para
+	{
+		padding: 10px 30px 10px 30px;
+		font-size: 17px;
+	}
+	.pro-back-whole
+	{
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.pro-back-img
+	{
+		margin-bottom: 20px;
+		height: 80%;
+		width: 80%;
+	}
+	.pro-back-img img
+	{
+		
+	}
+}
+
+@media (max-width: 563px)
+{
+	.ed-back-img
+	{
+		height: 40em;
+		width: 170em;
+	}
+	.ed-back-img img
+	{
+		height: 80%;
+		width: 80%;
+	}
+	.ed-my-story-content
+	{
+	margin: 0px 5px 0px 5px;
+	}
+	.edu-back-para
+	{
+		padding: 10px 20px 10px 20px;
+		font-size: 20px;
+	}
+	.cover
+	{
+		height: 200px;
+	}
+}
+
+@media (max-width: 518px)
+{
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 10px;
+	}
+	.my-story-img
+	{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.head-logo
+	{
+		height: 20px;
+		width: 80px;
+		margin-left: 7px;
+		margin-top: 23px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 9px;
+	}
+	.my-story-heading
+	{
+	font-size: 17px;
+	}
+	.my-story-para
+	{
+		padding: 10px 30px 10px 30px;
+		font-size: 15px;
+	}
+	.cover
+	{
+		height: 200px;
+	}
+	.wt-love-content
+	{
+		width: 80%;
+		margin: 10px 10px 10px 10px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 478px)
+{
+	.ed-back-img
+	{
+		height: 35em;
+		width: 150em;
+	}
+	.ed-back-img img
+	{
+		height: 80%;
+		width: 80%;
+	}
+}
+
+@media (max-width: 434px)
+{
+	.head
+	{
+		height: 40px;
+	}
+	.head-logo
+	{
+	height: 20px;
+	width: 80px;
+	margin-left: 7px;
+	margin-top: 15px;
+	}
+	.right-head
+	{
+		column-gap: 1%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 9px;
+	}
+	.my-story-heading
+	{
+	font-size: 15px;
+	}
+	.my-story-para
+	{
+		padding: 10px 10px 10px 10px;
+		font-size: 15px;
+	}
+	.cover
+	{
+		margin-top: 30px;
+		height: 150px;
+	}
+	.pro-para
+	{
+		padding: 10px 10px 10px 10px;
+	}
+
+}
+@media (max-width: 425px)
+{
+	.ed-my-story-content
+	{
+		margin-left: 20px; 
+	}
+	.ed-back-img
+	{
+		height: 35em;
+		width: 150em;
+	}
+	.ed-back-img img
+	{
+		height: 90%;
+		width: 90%;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 15px;
+	}
+	.edu-back-para
+	{
+		padding: 10px 10px 10px 10px;
+		font-size: 17px;
+	}
+	.wt-love-img
+	{
+	height: 10em;
+	width: 10em;
+	}
+}
+
+@media (max-width: 367px)
+{
+	.head-logo
+	{
+	/*height: 20px;*/
+	width: 65px;
+	/*margin-left: 7px;
+	margin-top: 15px;*/
+	}
+	.my-story-whole
+	{
+	display: flex;
+	/*justify-content: center;
+	align-items: center;*/
+	margin: 0px 10px 0px 10px;
+	}
+	.ed-back-img
+	{
+		height: 32em;
+		width: 120em;
+	}
+	.ed-back-img img
+	{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.ed-my-story-heading
+	{
+		font-size: 13px;
+	}
+	.edu-back-para
+	{
+		padding: 10px 10px 10px 10px;
+		font-size: 14px;
+	}
+	.ed-my-story-content
+	{
+	margin: 0px -20px 0px -10px;
+	}
+	.wt-love-content
+	{
+		width: 90%;
+	}
+	.pro-back-whole
+	{
+		margin: 50px 10px 50px 10px;
+	}
+}
+
+@media (max-width: 347px)
+{
+	.head-logo
+	{
+		/*display: none;*/
+		width: 50px;
+	}
+	.right-head
+	{
+		column-gap: 0;
+	}
+}
+@media (max-width: 320px)
+{
+	.ed-my-story-content
+	{
+		margin-left: 12px;
+	}
+	.ed-back-img
+	{
+		height: 28em;
+		width: 120em;
+	}
+	.ed-back-img img
+	{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.wt-love-img
+	{
+	height: 10em;
+	width: 9.5em;
+	}
 }
