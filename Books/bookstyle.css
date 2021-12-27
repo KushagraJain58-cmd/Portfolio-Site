@@ -189,6 +189,7 @@ body
 .book-back
 {
 	background-image: url(img/book_background.jpg);
+	object-fit: cover;
 }
 
 .book-about-whole
@@ -196,14 +197,14 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 50px;
+	padding: 20px 50px 0px 10px;
 }
 
 .book-about-img
 {
 	/*margin-right: -100px;*/
 	height: 700px;
-	width: 300em;
+	width: 150em;
 }
 
 .book-about-img img
@@ -212,7 +213,7 @@ body
 	width: 1000px;*/
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	/*object-fit: cover;*/
 }
 
 .book-about-content
@@ -222,14 +223,15 @@ body
 	justify-content: center;
 	align-items: center;
 	/*padding:40px;*/
-	margin:100px 150px 50px -100px;
+	/*margin:100px 150px 50px 100px;*/
 	color: #000;
+	padding: 0px 50px 0px 50px;
 }
 
 .book-about-content h2
 {
 	font-size: 30px;
-	margin-top:-60px; 
+	/*margin-top:-60px; */
 	text-transform: uppercase;
 	color: #000;
 	letter-spacing: 5px;
@@ -271,30 +273,44 @@ body
 
 .book-imgs
 {
-	/*margin-right: -100px;*/
+	display: flex;
+	padding: 20px;
+}
+
+.book-imgs-heading
+{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*height: 700px;
-	width: 55em;*/
-	margin: -150px 30px 50px 30px;
-	padding: 20px;
-	/*font-family: "Twinkle Star";*/
 }
 
-.book-imgs img
+..book-imgs-heading h1
+{
+	margin: 0px 20px 0px 20px;
+}
+
+.book-imgs-img
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	width: 80em;
+}
+
+.book-imgs-img img
 {
 	/*height: 700px;
 	width: 1000px;*/
-	height: 700px;
-	width: 55em;
-	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	/*margin-bottom: 100px;*/
+	/*object-fit: cover;*/
 }
 
-.book-imgs h1
+.book-imgs-heading h1
 {
 	font-size: 70px;
-	margin-top:-60px; 
 	letter-spacing: 3px;
 	color: #000;
 	font-weight: 700;
@@ -317,7 +333,7 @@ body
 
 .book-poster
 {
-	margin: -100px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 .book-poster img
@@ -365,47 +381,646 @@ body
 .my-poems-content
 {
 	display: flex;
-	justify-content: space-between;
-	padding: 50px;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .my-poems-ch
 {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 40px;
-	padding: 0px 50px 0px 50px;
-	background-color: #fdefb7;
+	/*justify-content: center;
+	align-items: center;*/
+	
+	padding: 20px 20px 20px 20px;
+	/*background-color: #fdefb7;*/
+	background-image: linear-gradient(#fdefb7,#fff);
 	border-radius: 60px;
-	margin-left: 70px;
-	height: 400px;
+	/*margin-left: 70px;*/
+	height: 50%;
 }
 
-.my-poems-ch-list
-{
-	height: 9em;
-	padding: -10px 30px 30px 30px;
-	font-size: 25px;
-	border-radius: 30px;
-	background-color: #fff9e0;
-	height: 260px;
-}
-
-.my-poems-ch-list ul li
+.my-poems-ch ul li
 {
 	font-family: "Poppins",sans-serif;
+	font-size: 25px;
 }
 
 .my-poems-img
 {
 	/*height: 500px;
 	width: 900px;*/
-	margin-right: 50px;
+	/*margin-right: 50px;*/
+	height: 650px;
+	width: 600px;
 }
 
 .my-poems-img img
 {
-	height: 600px;
-	width: 900px;
+	height: 100%;
+	width: 100%;
 }
+
+/********************MEDIA QUERY***********************/
+
+@media (max-width: 1384px)
+{
+	.left-head
+	{
+		width: 5%;
+		margin: 0;
+	}
+
+	.head-logo
+	{
+		height: 40px;
+		width: 140px;
+	}
+
+	.right-head
+	{
+		width: 1000px;
+		column-gap: 4%;
+	}
+
+}
+
+@media (max-width: 1203px)
+{
+	.right-head
+	{
+		width: 900px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1094px)
+{
+	.right-head
+	{
+		width: 700px;
+	}
+	.book-about-img
+	{
+		height: 500px;
+		width: 120em;
+	}
+	.book-about-content p
+	{
+		font-size: 18px;
+	}
+	.book-imgs-img
+	{
+		height: 500px;
+		width: 120em;
+	}
+}
+
+@media(max-width: 1024px)
+{
+	/*.book-about-img
+	{
+		height: 600px;
+		width: 200em;
+	}*/
+	.amazon
+	{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 899px)
+{
+	.head-logo
+	{
+		margin-left: 20px;
+	}
+	.right-head
+	{
+		width: 800px;
+		font-size: 15px;
+		column-gap: 2%;
+	}
+	.book-main-heading h1
+	{
+		font-size: 4em;
+		width: 600px;
+		height: 80px;
+	}
+	.book-about-img
+	{
+		height: 450px;
+		width: 120em;
+	}
+}
+
+@media (max-width: 856px)
+{
+	.head
+	{
+		height: 70px;
+		column-gap: 10%;
+	}
+	.right-head
+	{
+		width: 900px;
+		column-gap: 2%;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 823px)
+{
+	.head
+	{
+		column-gap: 10%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 14px;
+	}
+	.right-head
+	{
+		width: 900px;
+		/*justify-content: center;
+		align-items: center;*/
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		column-gap: 2%;
+		padding: 10px;
+	}
+	.cover
+	{
+		height: 350px;
+	}
+}
+
+@media(max-width: 750px)
+{
+	.book-main-heading h1
+	{
+		font-size: 3em;
+		width: 450px;
+		height: 60px;
+	}
+	.book-about-img
+	{
+		height: 550px;
+		width: 250em;
+	}
+	.book-about-content
+	{
+		padding: 20px;
+	}
+	.book-about-content h2
+	{
+		font-size: 25px;
+	}
+	.book-about-content p
+	{
+		font-size: 15px;
+	}
+	.book-imgs-img
+	{
+		height: 500px;
+		width: 150em;
+	}
+	.book-imgs-heading h1
+	{
+		font-size: 50px;
+	}
+	.my-poems-img
+	{
+		height: 550px;
+		width: 500px;
+	}
+	.my-poems-heading
+	{
+		font-size: 25px;
+		margin-top:25px; 
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 687px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 13px;
+	}
+	.head-logo
+	{
+	height: 30px;
+	width: 100px;
+	margin-left: 20px;
+	margin-top: 20px;
+	}
+	.cover
+	{
+		height: 300px;
+	}
+	.amazon img
+	{
+		height: 80px;
+		width: 150px;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.my-poems-img
+	{
+		height: 450px;
+		width: 400px;
+	}
+	.my-poems-heading
+	{
+		font-size: 20px;
+		margin-top:20px; 
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 600px)
+{
+	.head
+	{
+		height: 60px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 11px;
+	}
+	
+	.head-logo
+	{
+	height: 25px;
+	width: 90px;
+	margin-left: 10px;
+	margin-top: 20px;
+	}
+}
+
+@media(max-width: 550px)
+{
+	.book-about-img
+	{
+		height: 500px;
+		width: 250em;
+		margin-top: -100px;
+	}
+	.amazon img
+	{
+		height: 70px;
+		width:	100px;
+	}
+	.book-imgs-img
+	{
+		height: 450px;
+		width: 150em;
+	}
+	.book-imgs-heading h1
+	{
+		font-size: 40px;
+	}
+	.my-poems-img
+	{
+		height: 400px;
+		width: 400px;
+	}
+	.my-poems-ch ul li
+	{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 518px)
+{
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 10px;
+	}
+	.book-main-heading h1
+	{
+		font-size: 2.5em;
+		width: 350px;
+		height: 50px;
+	}
+	.book-about-img
+	{
+		height: 400px;
+		width: 250em;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.head-logo
+	{
+		height: 20px;
+		width: 80px;
+		margin-left: 7px;
+		margin-top: 23px;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 9px;
+	}
+	.cover
+	{
+		height: 200px;
+	}
+	.my-poems-heading
+	{
+		font-size: 17px;
+		margin-top:10px; 
+		letter-spacing: 2px;
+	}
+}
+
+@media(max-width: 470px)
+{
+	.book-about-whole
+	{
+		padding: 20px 0px 20px 10px;
+	}
+	.book-about-img
+	{
+		height: 300px;
+		width: 200em;
+		margin-top: -100px;
+	}
+	.book-imgs-img
+	{
+		height: 350px;
+		width: 100em;
+	}
+	.book-imgs-heading h1
+	{
+		font-size: 40px;
+	}
+	.my-poems-ch
+	{
+		padding: 10px;
+	}
+	.my-poems-ch ul li
+	{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 434px)
+{
+	.head
+	{
+		height: 40px;
+	}
+	.head-logo
+	{
+	height: 20px;
+	width: 80px;
+	margin-left: 7px;
+	margin-top: 15px;
+	}
+	.right-head
+	{
+		column-gap: 1%;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 9px;
+	}
+	.book-main-heading h1
+	{
+		font-size: 2em;
+		width: 300px;
+		height: 40px;
+	}
+	.book-about-img
+	{
+		height: 200px;
+		width: 150em;
+		margin-top: -200px;
+	}
+	.book-about-content h2
+	{
+		font-size: 17px;
+		letter-spacing: 2px;
+	}
+
+	.book-about-content p
+	{
+		font-size: 12px;
+	}
+	.my-poems-img
+	{
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 404px)
+{
+	.book-about-whole
+	{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	}
+	.book-about-img
+	{
+		height: 550px;
+		width: 200em;
+		margin-top: 0px;
+	}
+	.book-about-img img
+	{
+		height: 90%;
+		width: 90%;
+		object-fit: cover;
+		margin-left: 20px;
+	}
+	.book-about-content h2
+	{
+		font-size: 25px;
+	}
+
+	.book-about-content p
+	{
+		font-size: 17px;
+	}
+	.amazon img
+	{
+		height: 100px;
+		width:	150px;
+	}
+	.book-imgs
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.book-imgs-img
+	{
+		height: 370px;
+		width: 100em;
+	}
+	.book-imgs-heading h1
+	{
+		font-size: 40px;
+	}
+	.my-poems-heading
+	{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 367px)
+{
+	.head-logo
+	{
+		width: 65px;
+	}
+	.book-imgs-img
+	{
+		height: 300px;
+		width: 100em;
+	}
+	.my-poems-ch
+	{
+		border-radius: 10px;
+	}
+	.my-poems-ch ul
+	{
+		padding-inline-start: 10px;
+	}
+	.my-poems-ch ul li
+	{
+		font-size: 12px;
+	}
+	.my-poems-img
+	{
+		height: 250px;
+		width: 250px;
+	}
+	.my-poems-heading
+	{
+		font-size: 12px;
+		margin-top:5px; 
+		letter-spacing: 1px;
+	}
+}
+
+@media (max-width: 347px)
+{
+	.head-logo
+	{
+		width: 50px;
+	}
+	.right-head
+	{
+		column-gap: 0;
+	}
+	.blog, .podcast,
+	.poetry,
+	.workshop,
+	.public-speaking,
+	.books,
+	.my-story,
+	.contacts
+	{
+		font-size: 8px;
+	}
+	.book-main-heading h1
+	{
+		font-size: 1.75em;
+		width: 250px;
+		height: 30px;
+	}
+	.book-about-content h2
+	{
+		font-size: 20px;
+	}
+	.amazon img
+	{
+		height: 80px;
+		width:	120px;
+	}
+
+}
+
+@media(max-width: 330px)
+{
+	.book-about-img
+	{
+		height: 500px;
+		width: 250em;
+		/*margin-left: 20px;*/
+	}
+	.book-imgs-img
+	{
+		height: 300px;
+		width: 100em;
+	}
+}
+

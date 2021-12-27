@@ -338,10 +338,21 @@ body
 }
 .poetry-img
 {
-	width: 90%;
+	width: 100%;
 	/*background: linear-gradient(to bottom right,#F22F2F,#FF5D5D);*/
-	padding: 10px;
-	border-radius: 100px;
+	/*padding: 10px;*/
+	/*border-radius: 100px;*/
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+
+.mySlides
+{
+	display: flex;
+	justify-content: center;
+	/*padding: 0px 10px 0px 10px;*/
+
 }
 
 .mySlide {
@@ -350,9 +361,10 @@ body
 
 .mySlide img
 {
-	height: 23em;
-	margin: 10px 55px 10px 25px;
-	object-fit: cover;cursor: pointer;
+	height: 25em;
+	margin: 10px 10px 10px 10px;
+	object-fit: cover;
+	cursor: pointer;
 }
 
 .prev,
@@ -373,7 +385,7 @@ body
 
 .next {
     right: 0;
-    margin-right: 4em;
+    margin-right: 0em;
     border-radius: 3px 0 0 3px;
 }
 
@@ -532,13 +544,6 @@ body
 	color: #000;
 }
 
-.contact-whole
-{
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
-}
-
 .contact-heading
 {
 	display: flex;
@@ -644,6 +649,14 @@ body
 	}
 }
 
+@media(max-width: 1300px)
+{
+	.mySlide img
+	{
+	height: 20em;
+	}
+}
+
 @media (max-width: 1150px)
 {
 	.blog, .podcast,
@@ -656,6 +669,15 @@ body
 	{
 		font-size: 20px;
 	}
+	.blog-content-written
+	{
+	padding:40px 10px 40px 10px;
+	}
+	.blog-card
+	{
+		margin:0 10px 0 10px;
+		padding:0px 10px 5px 10px;
+	}
 }
 
 @media (max-width: 1094px)
@@ -665,6 +687,35 @@ body
 		height: 100px;
 		/*width: 210px;*/
 	}
+	.mySlide img
+	{
+	height: 18em;
+	}
+	.prev,.next
+	{
+		margin-top: -6em;
+	}
+	.contact-heading h2
+	{
+	font-size: 37px;
+	/*margin-bottom: -10px;*/
+	}
+	.contact-heading p
+	{
+		font-size: 17px;
+	}
+	.contact-btn button
+	{
+		font-size: 1.5em;
+		/*margin: 25px 0px 30px 0px;
+		padding: 0.3em 1em;*/
+	}
+	.email 
+	{
+		font-size: 20px;
+		/*margin-top: -40px;*/
+	}
+
 }
 
 @media (max-width: 1045px)
@@ -687,6 +738,30 @@ body
 	.contacts
 	{
 		font-size: 18px;
+	}
+}
+
+@media(max-width: 976px)
+{
+	.mySlide img
+	{
+	height: 16em;
+	}
+	.poetry-heading h2
+	{
+	font-size: 35px;
+	}
+	/*.prev,.next
+	{
+		margin-top: -6em;
+	}*/
+	.blog-card h3
+	{
+		font-size: 25px;
+	}
+	.blog-heading h2
+	{
+		font-size: 35px;
 	}
 }
 
@@ -757,10 +832,38 @@ body
 		width: 70%;
 		margin-bottom: 20px;
 	}
+	.mySlide img
+	{
+	height: 14em;
+	}
+	.prev,.next
+	{
+		margin-top: -5em;
+	}
+	.poetry-heading h2
+	{
+	font-size: 32px;
+	}
+	.about
+	{
+		margin-bottom: 0px;
+	}
+	.about-content
+	{
+		margin-bottom: 50px;
+	}
+	.poems
+	{
+	margin-top: -30px;
+	}
 	/*.ab-vid
 	{
 		object-fit: cover;
 	}*/
+	.blog-card-para p
+	{
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 823px)
@@ -782,7 +885,7 @@ body
 	}
 }
 
-@media (max-width: 767px)
+@media (max-width: 768px)
 {
 	.left-head
 	{
@@ -796,6 +899,46 @@ body
 	.social-content
 	{
 	 	margin: 10px 20px 10px 30px;
+	}
+	.blog-content
+	{
+		margin-bottom: 10px;
+	}
+	.contact-heading h2
+	{
+	font-size: 32px;
+	margin-bottom: -10px;
+	}
+	.contact-heading p
+	{
+		font-size: 14px;
+	}
+	.contact-btn button
+	{
+		font-size: 1.25em;
+		margin: 20px 0px 30px 0px;
+		padding: 0.3em 1em;
+	}
+	.email 
+	{
+		font-size: 17px;
+		margin-top: -40px;
+	}
+}
+
+@media(max-width: 775px)
+{
+	.mySlide img
+	{
+	height: 12em;
+	}
+	/*.prev,.next
+	{
+		margin-top: -5em;
+	}*/
+	.guest
+	{
+		display: none;
 	}
 }
 
@@ -837,6 +980,14 @@ body
 	{
 		margin: 50px 0px 50px 0px;
 	}
+	.mySlide img
+	{
+	height: 10em;
+	}
+	.prev,.next
+	{
+		font-size: 23px;
+	}
 }
 
 @media(max-width: 570px)
@@ -854,6 +1005,14 @@ body
 	{
 		height: 500px;
 		width: 80%;
+	}
+	.mySlide img
+	{
+	height: 9em;
+	}
+	.prev,.next
+	{
+		font-size: 23px;
 	}
 }
 
@@ -879,16 +1038,48 @@ body
 	{
 		height: 500px;
 	}
+	.read-all button
+	{
+	/*height: 4em;
+	width: 6em;*/
+	font-size: 1em;
+	}
+	.blog-card h3
+	{
+		font-size: 22px;
+	}
+	.blog-card-para p
+	{
+		font-size: 12px;
+	}
 }
 
-@media (max-width: 518px)
+@media (max-width: 525px)
 {
-	/*.head-logo
+	.mySlides
 	{
-		width: 90px;
-		margin-left: 20px;
-		margin-top: 23px;
-	}*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*margin-left: 50px;*/
+		flex-direction: column;
+	}
+	.last
+	{
+		display: none;
+	}
+	.mySlide img
+	{
+	height: 13em;
+	}
+	.prev,.next
+	{
+		margin-top: -6em;
+	}
+	.read-all-blog button
+	{
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 500px)
@@ -929,12 +1120,40 @@ body
 	}
 }
 
+@media(max-width: 475px)
+{
+	.mySlide img
+	{
+	height: 11em;
+	}
+}
+
 @media (max-width: 460px)
 {
 	.about-img
 	{
 		height: 400px;
 		width: 90%;
+	}
+	.contact-heading h2
+	{
+	font-size: 28px;
+	margin-bottom: -10px;
+	}
+	.contact-heading p
+	{
+		font-size: 12px;
+	}
+	.contact-btn button
+	{
+		font-size: 1em;
+		margin: 20px 0px 30px 0px;
+		padding: 0.3em 1em;
+	}
+	.email 
+	{
+		font-size: 14px;
+		margin-top: -40px;
 	}
 }
 
@@ -975,9 +1194,13 @@ body
 	{
 		height: 300px;
 	}
+	.hide-line
+	{
+		display: none;
+	}
 }
 
-@media (max-width: 400px)
+@media (max-width: 404px)
 {
 	.left-head
 	{
@@ -988,6 +1211,44 @@ body
 	{
 		height: 90%;
 		width: 90%;
+	}
+
+
+	.mySlide img
+	{
+	height: 9em;
+	}
+	/*.mySlides
+	{
+		justify-content: center;
+		align-items: center;
+	}*/
+	.prev,.next
+	{
+		margin-top: -5em;
+		font-size: 20px;
+	}
+	.poetry-heading h2
+	{
+	font-size: 25px;
+	}
+	.blog-card
+	{
+		padding: 10px;
+	}
+	.blog-card h3
+	{
+		font-size: 18px;
+	}
+	.blog-card-para p
+	{
+		font-size: 12px;
+		/*margin-top: 0px;
+	}*/
+	}
+	.blog-heading h2
+	{
+		font-size: 25px;
 	}
 }
 
@@ -1037,6 +1298,40 @@ body
 	{
 	font-size: 16px;
 	}
+	.about-content
+	{
+		margin-bottom: 15px;
+	}
+	.contact-heading h2
+	{
+	font-size: 25px;
+	margin-bottom: -10px;
+	}
+	.contact-heading p
+	{
+		font-size: 10px;
+	}
+	.contact-btn button
+	{
+		font-size: 1em;
+		margin: 20px 0px 30px 0px;
+		padding: 0.3em 1em;
+	}
+	.email 
+	{
+		font-size: 12px;
+		margin-top: -40px;
+	}
+	.blog-card h3
+	{
+		font-size: 15px;
+	}
+	.blog-card-para p
+	{
+		font-size: 9px;
+		/*margin-top: 0px;
+	}*/
+	}
 }
 
 @media (max-width: 347px)
@@ -1069,8 +1364,8 @@ body
 	.my-story,
 	.contacts
 	{
-		font-size: 8px;
-		margin-right: -2px;
+		font-size: 7px;
+		margin-right: 0px;
 	}
 	.about
 	{
@@ -1080,4 +1375,29 @@ body
 	{
 		margin-top: 0px;
 	}
+	.left-head
+	{
+		height: 20px;
+		width: 15%;
+	}
+	.head-logo
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.mySlide img
+	{
+	height: 8em;
+	}
+	/*.mySlides
+	{
+		justify-content: center;
+		align-items: center;
+	}*/
+	.prev,.next
+	{
+		margin-top: -5em;
+		font-size: 20px;
+	}
+
 }
