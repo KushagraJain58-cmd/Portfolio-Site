@@ -154,6 +154,10 @@ body
 	object-fit: cover;
 	/*width: 100%;*/
 }
+.mid-bar img
+{
+	display: none;
+}
 
 .main-page
 {
@@ -1001,13 +1005,16 @@ body
 	{
 		display: none;
 	}
-	/*.mid-bar
-	{
-		background-image: url(images/cover_photo4.png);
-	}
-	.mid-video
+	/*.mid-video 
 	{
 		display: none;
+	}
+	.mid-bar img
+	{
+		height: 100%;
+		width: 100%;
+		display: block;
+		object-fit: cover;
 	}*/
 }
 
@@ -1486,4 +1493,17 @@ body
 		font-size: 20px;
 	}
 
+}
+
+@media (max-width: 320px)
+{
+	.left-head
+	{
+		
+		width: 20%;
+	}
+	.head-logo
+	{
+		margin-left: 25px;
+	}
 }
