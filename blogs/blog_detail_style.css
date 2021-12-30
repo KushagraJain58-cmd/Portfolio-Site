@@ -203,6 +203,49 @@ body
 	font-weight: bold;
 }
 
+.footer
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.foot
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10%;
+	background-color: #2D2C2C;
+	padding: 30px 0px 30px 0px;
+}
+.foot-logo 
+{
+	height: 100px;
+	width: 200px;
+}
+.foot-logo img
+{
+	height: 100%;
+	width: 100%;
+}
+.foot-list
+{
+	color: #fff;
+	font-size: 18px;
+}
+
+.made-by
+{
+	background-color: #000;
+	color:#6D6C6C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
 /********************MEDIA QUERY***********************/
 
 @media (max-width: 1384px)
