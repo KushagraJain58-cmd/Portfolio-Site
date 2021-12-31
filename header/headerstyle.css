@@ -1451,6 +1451,14 @@ body
 		letter-spacing: 1px;
 	}
 }
+
+@media(max-width: 300px)
+{
+	.email
+	{
+		font-size: 13px;
+	}
+}
 @media(max-width: 273px)
 {
 	.email
