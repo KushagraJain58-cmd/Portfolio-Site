@@ -1524,6 +1524,11 @@ body
 		/*margin-top: 0px;
 	}*/
 	}
+	.sml-head
+	{
+	height: 100px;
+	width: 50%;
+	}
 }
 
 @media (max-width: 347px)
@@ -1590,6 +1595,20 @@ body
 	{
 		margin-top: -1em;
 		font-size: 20px;
+	}
+	.sml-head
+	{
+	height: 100px;
+	width: 55%;
+	}
+
+	.sml-head-logo
+	{
+	height: 100%;
+	width: 100%;
+	margin-top: 8px;
+	/*margin-top: 30px;
+	margin-left: 50px;*/
 	}
 
 }
