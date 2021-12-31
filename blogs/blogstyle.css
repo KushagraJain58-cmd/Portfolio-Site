@@ -79,10 +79,10 @@ body
   background-color: rgba(10,10,10,0.99); 
 }
 
-./*topnav:hover
+.topnav:hover
 {
 	background: transparent;
-}*/
+}
 
 .topnav #myLinks {
   display: none;
