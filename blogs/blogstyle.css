@@ -733,6 +733,15 @@ body
 	{
 		display: none;
 	}
+	.cover
+	{
+		height: 200px;
+
+	}
+	.cover-img
+	{
+		margin-top: 40px;
+	}
 }
 
 
