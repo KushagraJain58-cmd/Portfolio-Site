@@ -73,7 +73,7 @@ body
   /*position: relative;*/
   position: fixed;
   display: none;
-  z-index: 99999;
+  z-index: 99;
   height: auto;
   width: 100%;
   background-color: rgba(10,10,10,0.99); 
@@ -90,8 +90,8 @@ body
   /*background: transparent;*/
   opacity: 0.8;
   margin-right: 20px;
- /* margin-top: -10px;*/
-  /*position: relative;*/
+  margin-top: 10px;
+  position: relative;
 }
 
 .topnav #myLinks a
@@ -717,7 +717,7 @@ body
 	}
 	.sml-head
 	{
-	height: 40px;
+	height: 30px;
 	width: 45%;
 	}
 
@@ -767,5 +767,18 @@ body
 	.contacts
 	{
 		font-size: 8px;
+	}
+	/*.sml-head-logo
+	{
+	height: 40px;
+	width: 80%;
+	}*/
+	.sml-head-logo
+	{
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	/*margin-top: 30px;
+	margin-left: 50px;*/
 	}
 }
