@@ -685,9 +685,11 @@ body
 	{
 		margin-top: 40px;
 	}
-	.heading
+	.heading 
 	{
 		margin-top: 100px;
+		/*margin: 100px 40px 100px 40px;*/
+		padding: 0px 20px 0px 20px;
 	}
 }
 
