@@ -1524,17 +1524,32 @@ body
 	{
 		display: none;
 	}
-	/*.cover
-	{
-		height: 300px;
-	}
-	.cover-img
-	{
-		margin-top: 40px;
-	}*/
 	.podcast-journey-whole
 	{
 		margin-top: 80px;
+	}
+	.poem-cover
+	{
+		height: 200px;
+	}
+	.poem-cover-img
+	{
+		margin-top: 40px;
+	}
+	.poem-main
+	{
+		margin-top: 80px;
+	}
+	.work-main
+	{
+		margin-top: 50px;
+	}
+	.soul-main {
+    margin-top: 100px;
+	}
+	.spotify
+	{
+		margin-top: 20px;
 	}
 }
 
