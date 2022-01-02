@@ -237,12 +237,18 @@ body
 
 .poem-main
 {
-	display: grid;
+	/*display: grid;
 	grid-gap: 11em;
 	grid-row-gap: 100px;
 	grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); 
-	 grid-template-rows: 1fr; 
-	margin: 100px 180px 50px 50px;
+	 grid-template-rows: 1fr;*/ 
+	 display: flex;
+	 /*justify-content: center;
+	 align-content: center;*/
+	 justify-content: space-around;
+	 flex-wrap: wrap;
+	 column-gap: 7.5%;
+	margin: 100px 50px 50px 50px;
 	/*padding: 50px 50px 50px 50px;*/
 }
 
@@ -250,12 +256,13 @@ body
 {
 	height: 25em;
 	width: 25em;
+	margin-bottom: 40px;
 }
 
 .poem-main-card img
 {
-	height: 25em;
-	width: 25em;
+	height: 100%;
+	width: 100%;
 	margin-bottom: 0px;
 	border-radius: 30px;
 	cursor: pointer;
@@ -981,6 +988,20 @@ body
 	}
 }
 
+@media(max-width: 964px)
+{
+	.poem-main
+	{
+		margin: 80px 20px 50px 20px;
+
+	}
+	.poem-main-card
+	{
+	height: 20em;
+	width: 20em;
+	}
+}
+
 @media(max-width: 924px)
 {
 	.how-btn
@@ -1037,7 +1058,7 @@ body
 	}
 }
 
-@media (max-width: 856px)
+@media (max-width: 857px)
 {
 	.head
 	{
@@ -1073,6 +1094,16 @@ body
 		/* grid-template-rows: 1fr;*/ 
 		margin: 100px 180px 50px 150px;
 		/*padding: 50px 50px 50px 50px;*/
+	}
+	.poem-main
+	{
+		margin: 80px 20px 50px 20px;
+
+	}
+	.poem-main-card
+	{
+	height: 18em;
+	width: 18em;
 	}
 }
 
@@ -1155,11 +1186,6 @@ body
 	{
 		height: 300px;
 	}
-	.poem-main
-	{
-		grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
-		margin: 100px 180px 50px 100px;
-	}
 	.pod-p 
 	{
 	/*color: #fff;*/
@@ -1180,6 +1206,15 @@ body
 	{
 		font-size: 30px;
 		letter-spacing: 3px;
+	}
+	.poem-main
+	{
+		margin: 80px 20px 50px 20px;
+	}
+	.poem-main-card
+	{
+	height: 15em;
+	width: 15em;
 	}
 }
 
@@ -1209,13 +1244,12 @@ body
 	}
 	.poem-main
 	{
-		/*display: grid;
-		grid-gap: 14em;
-		grid-row-gap: 100px;*/
-		grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
-		/* grid-template-rows: 1fr;*/ 
-		margin: 100px 180px 50px 50px;
-		/*padding: 50px 50px 50px 50px;*/
+		margin: 40px 20px 20px 20px;
+	}
+	.poem-main-card
+	{
+	height: 12em;
+	width: 12em;
 	}
 	.my-pod-heading h2
 	{
@@ -1282,22 +1316,18 @@ body
 	}
 	.poem-main-card
 	{
-		height: 20em;
-		width: 20em;
+		height: 22em;
+		width: 22em;
 	}
 
 	.poem-main-card img
 	{
-		height: 20em;
-		width: 20em;
-		margin-bottom: 0px;
-		border-radius: 30px;
-		cursor: pointer;
+		height: 100%;
+		width: 100%;
 	}
 	.poem-main
-	{
-		grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
-		margin: 100px 180px 50px 70px;
+	{ 
+		margin: 20px 10px 10px 10px;
 	}
 	.podcast-cover-img
 	{
@@ -1364,11 +1394,6 @@ body
 	.poem-cover
 	{
 		height: 200px;
-	}
-	.poem-main
-	{
-		grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
-		margin: 100px 180px 50px 30px;
 	}
 	.my-podcast-soul
 	{
@@ -1454,6 +1479,11 @@ body
 	{
 		font-size: 22px;
 		letter-spacing: 1px;
+	}
+	.poem-main-card
+	{
+		height: 18em;
+		width: 18em;
 	}
 }
 
@@ -1557,6 +1587,11 @@ body
 	/*display: flex;*/
 	 margin: 5px 10px 10px 10px;
 	/*justify-content: center;*/
+	}
+	.poem-main-card
+	{
+		height: 15em;
+		width: 15em;
 	}
 }
 
