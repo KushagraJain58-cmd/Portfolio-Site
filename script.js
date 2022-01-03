@@ -66,29 +66,17 @@ function normalImg(x) {
 
 //////////////////// ENLARGE IMAGE CLOSED/////////////////
 
-///////////////////// BLOG HOME ///////////////////////////
-// document.querySelector(".writing").addEventListener("click", function () {
-// 			window.location.href = "./blogs/writing.html"
-// 		});
-// 		document.querySelector(".cycle").addEventListener("click", function () {
-// 			window.location.href = "./blogs/cycle.html"
-// 		});
-// 		document.querySelector(".guest").addEventListener("click", function () {
-// 			window.location.href = "./blogs/guest.html"
-// 		});
-// 		document.querySelector(".read-all-blog").addEventListener("click", function () {
-// 			window.location.href = "./blogs/blog.html"
-// 		});
-
-///////////////////// BLOG HOME CLOSED //////////////////////////
-
 
 //////////////////// MOBILE HEADER /////////////////////////////
-function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-        x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+function myFunction() 
+{
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block")
+    {
+      x.style.display = "none";
+    } 
+    else 
+    {
+      x.style.display = "block";
     }
+}
