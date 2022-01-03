@@ -71,7 +71,7 @@ body
   /*overflow: hidden;*/
   position: fixed;
   display: none;
-  /*z-index: 99;*/
+  z-index: 99;
   height: 60px;
   width: 100%;
   background-color: rgba(10,10,10,0.99); 
@@ -1317,6 +1317,13 @@ body
 	{
 		font-size: 15px;
 	}
+	.gap-heading 
+	{
+		margin: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 367px)
@@ -1384,6 +1391,10 @@ body
 	{
 		font-size: 17px;
 		margin: 0;
+	}
+	.pro-heading
+	{
+		font-size: 17px;
 	}
 	.edu-back-para p
 	{
