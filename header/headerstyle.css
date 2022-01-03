@@ -1617,6 +1617,10 @@ body
 		height: 15em;
 		width: 15em;
 	}
+	.email 
+	{
+		margin: 0px 30px 0px 30px;
+	}
 }
 
 @media (max-width: 347px)
