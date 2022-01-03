@@ -626,6 +626,7 @@ body
 	align-items: center;
 	font-size: 25px;
 	color: #8D8C8C;
+	margin: 0px 10px 0px 10px;
 	/*margin-top: -40px;*/
 }
 .email p
