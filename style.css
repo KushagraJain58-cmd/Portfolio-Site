@@ -297,8 +297,8 @@ body
 }
 .about-img
 {
-	height: 700px;
-	width: 80em;
+	height: 600px;
+	width: 85em;
 }
 .ab-vid
 {
@@ -1394,6 +1394,18 @@ body
 	{
 		display: none;
 	}
+	.mid-video
+	{
+	display: none;
+	}
+.mid-bar img
+{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 }
 
 @media (max-width: 404px)
