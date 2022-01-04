@@ -1,6 +1,6 @@
 # Portfolio-Site
 
-To access this project <a href="https://kushagrajain58-cmd.github.io/Portfolio-Site/" target="_blank">click here</a>
+To access this project <a href="https://www.ishikajain.in/" target="_blank">click here</a>
 
 <div align="center">
   <h4>TECH STACK USED</h4>
