@@ -68,6 +68,24 @@ body
 	margin:0px 0px 0px 0px;
 	/*scroll-padding-top: 56px;*/
 }
+h1
+{
+	font-family: "Roboto",sans-serif;
+}
+h2
+{
+	font-family: "Roboto",sans-serif;
+}
+h3
+{
+	font-family: "Roboto",sans-serif;
+}
+
+p
+{
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+}
 
 .topnav {
   overflow: hidden;
@@ -78,6 +96,7 @@ body
   z-index: 99999;
   height: auto;
   width: 100%;
+  font-family: "Roboto",sans-serif;
 }
 
 .topnav #myLinks {
@@ -155,6 +174,7 @@ body
 	position: absolute;
 	box-shadow: none;
 	z-index: 99999;
+	font-family: "Roboto",sans-serif;
 }
 
 .left-head
@@ -297,7 +317,7 @@ body
 }
 .about-img
 {
-	height: 600px;
+	/*height: 600px;*/
 	width: 85em;
 }
 .ab-vid
@@ -322,7 +342,7 @@ body
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 100px; 
+	/*margin-bottom: 100px;*/ 
 	padding-top: 60px;
 	background-image: linear-gradient(#0c71c3,#5F97F1);
 }
@@ -332,6 +352,7 @@ body
 	text-transform: uppercase;
 	color: #fff;
 	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+	font-size: 25px;
 }
 
 .about-heading h2 hr
@@ -588,12 +609,24 @@ body
 	cursor: pointer;
 }
 
+.blog-card:hover
+{
+	box-shadow: rgb(38 90 116 / 92%) 0px 50px 100px -20px, rgb(247 6 6 / 97%) 0px 30px 60px -30px, rgb(8 238 215 / 96%) 0px -2px 6px 0px inset;
+	background-image: linear-gradient(#0b5c9e,#5F97F1);
+}
+
 .blog-card h3
 {
 	display: flex;
 	justify-content: center;
 	font-size: 30px;
 	text-decoration: underline;
+}
+.blog-card p
+{
+	text-align: left;
+	font-size: 17px;
+	line-height: 20px;
 }
 
 .read-all-blog
@@ -751,6 +784,69 @@ body
 }
 
 /********************MEDIA QUERY***********************/
+
+@media(min-width: 1600px)
+{
+	.about-heading h2
+	{
+		font-size: 35px;
+	}
+	.lrg-size-p
+	{
+		font-size: 25px;
+	}
+	.mySlide img
+	{
+	height: 27em;
+	margin: 10px 40px 10px 40px;
+	}
+	.blog-card h3
+	{
+		font-size: 40px;
+	}
+	.blog-card p
+	{
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.lrg-btn button
+	{
+		font-size: 3em;
+	}
+}
+@media(min-width: 2000px)
+{
+	.about-heading h2
+	{
+		font-size: 40px;
+	}
+	.lrg-size-p
+	{
+		font-size: 30px;
+	}
+	.mySlide img
+	{
+	height: 30em;
+	margin: 10px 60px 10px 60px;
+	}
+	.blog-card h3
+	{
+		font-size: 50px;
+	}
+	.blog-card p
+	{
+		font-size: 30px;
+		line-height: 30px;
+	}
+}
+@media(min-width: 2300px)
+{
+	.mySlide img
+	{
+	height: 35em;
+	margin: 10px 70px 10px 70px;
+	}
+}
 
 @media (max-width: 1384px)
 {
@@ -1451,8 +1547,7 @@ body
 	.blog-card-para p
 	{
 		font-size: 12px;
-		/*margin-top: 0px;
-	}*/
+		line-height: 17px;
 	}
 	.blog-heading h2
 	{

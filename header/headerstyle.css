@@ -68,6 +68,16 @@ body
 	overflow-x: hidden;
 	margin: 0;
 }
+h2
+{
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+}
+p
+{
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+}
 
 
 .topnav {
@@ -273,15 +283,17 @@ body
 .podcast-journey-whole
 {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-top: 200px;
 }
 
 .podcast-cover
 {
-	height: 37em;
+	/*height: 37em;*/
 	width: 40%;
 	/*margin-left: 400px;*/
-	margin: 10px 10px 50px 50px;
+	margin: 10px 10px 50px 10px;
 }
 
 .podcast-cover-img
@@ -289,17 +301,28 @@ body
 	height: 100%;
 	width: 100%;
 	border-radius: 30px;
+	object-fit: cover;
 }
 
 .podcast-journey
 {
 	/*height: 25em;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 70px;
 	width: 40%;
 	margin: 10px 40px 50px 0px;
 	background-image: linear-gradient(#0c71c3,#5F97F1);
 	color: #fff;
 	border-radius: 30px;
+}
+
+.podcast-journey:hover
+{
+	box-shadow: rgb(38 90 116 / 92%) 0px 50px 100px -20px, rgb(247 6 6 / 97%) 0px 30px 60px -30px, rgb(8 238 215 / 96%) 0px -2px 6px 0px inset;
+	background-image: linear-gradient(#0b5c9e,#5F97F1);
 }
 
 .podcast-journey h2
@@ -711,19 +734,23 @@ body
     left: 0px;*/
     margin: 0;
 }
-
-.work-optns
+/*.work-optns
 {
-	/*display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	column-gap: 10%;
-	margin:30px;*/
+	margin: 30px;
+}*/
+.work-optns
+{
 	display: grid;
 	grid-gap: 8em;
 	grid-row-gap: 80px;
 	grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); 
 	grid-template-rows: 1fr; 
+	justify-content: center;
+	align-content: center;
 	margin:30px;
 }
 
@@ -754,10 +781,12 @@ body
 .dropbtn:hover
 {
 	z-index: -2;
-	box-shadow: rgba(228, 207, 44, 0.919) 0px 50px 100px -20px, rgba(247, 6, 6, 0.974) 0px 30px 60px -30px, rgba(8, 238, 215, 0.96) 0px -2px 6px 0px inset;
+	/*box-shadow: rgba(228, 207, 44, 0.919) 0px 50px 100px -20px, rgba(247, 6, 6, 0.974) 0px 30px 60px -30px, rgba(8, 238, 215, 0.96) 0px -2px 6px 0px inset;*/
+	box-shadow: rgb(38 90 116 / 92%) 0px 50px 100px -20px, rgb(247 6 6 / 97%) 0px 30px 60px -30px, rgb(8 238 215 / 96%) 0px -2px 6px 0px inset;
 	font-weight: 600;
 	background-image: linear-gradient(#0b5c9e,#5F97F1);
 	font-size: 15px;
+	transition:800ms;
 }
 
 .dropdown-content {
@@ -799,6 +828,35 @@ body
 }
 
 /********************MEDIA QUERY***********************/
+
+@media(min-width: 1650px)
+{
+	.podcast-journey
+	{
+		padding: 50px;
+		margin-right: 10px;
+	}
+	.podcast-journey h2
+	{
+		font-size: 40px;
+	}
+	.podcast-journey p
+	{
+		font-size: 27px;
+	}
+}
+
+@media(min-width: 2200px)
+{
+	.podcast-journey h2
+	{
+		font-size: 50px;
+	}
+	.podcast-journey p
+	{
+		font-size: 35px;
+	}
+}
 
 @media(max-width: 1510px)
 {

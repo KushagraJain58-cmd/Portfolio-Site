@@ -66,6 +66,24 @@ body
 	overflow-x: hidden;
 	margin:0px;
 }
+h1
+{
+	font-family: "Roboto",sans-serif;
+}
+h2
+{
+	font-family: "Roboto",sans-serif;
+}
+h3
+{
+	font-family: "Roboto",sans-serif;
+}
+
+p
+{
+	font-family: "Roboto",sans-serif;
+}
+
 
 .topnav {
   /*overflow: hidden;*/
@@ -157,6 +175,7 @@ body
 	position: fixed;
 	box-shadow: none;
 	z-index: 99999;
+
 }
 
 .left-head
@@ -200,6 +219,7 @@ body
 	position: relative;
 	color: #fff;
 	text-decoration: none;
+	font-family: "Roboto",sans-serif;
 }
 
 .animated-underline:after {

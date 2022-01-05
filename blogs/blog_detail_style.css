@@ -66,6 +66,23 @@ body
 	overflow-x: hidden;
 	margin-left: 0;
 }
+h1
+{
+	font-family: "Roboto",sans-serif;
+}
+h2
+{
+	font-family: "Roboto",sans-serif;
+}
+h3
+{
+	font-family: "Roboto",sans-serif;
+}
+
+p
+{
+	font-family: "Roboto",sans-serif;
+}
 
 .topnav {
   /*overflow: hidden;*/
