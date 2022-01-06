@@ -718,7 +718,7 @@ p
 	}
 }
 
-@media(max-width: 750px)
+@media(max-width: 800px)
 {
 	.book-main-heading h1
 	{
@@ -1053,11 +1053,6 @@ p
 	{
 		margin-top: 40px;
 	}
-}
-
-
-@media (max-width: 404px)
-{
 	.book-about-whole
 	{
 	display: flex;
