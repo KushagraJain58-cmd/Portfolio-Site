@@ -1501,6 +1501,10 @@ p
 	width: 100%;
 	object-fit: cover;
 }
+.about-heading
+{
+	padding: 0px 60px 0px 60px;
+}
 .about-heading h2
 {
 	font-size: 15px;
