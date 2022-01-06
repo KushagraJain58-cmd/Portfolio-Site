@@ -345,6 +345,7 @@ p
 	/*margin-bottom: 100px;*/ 
 	padding-top: 60px;
 	background-image: linear-gradient(#0c71c3,#5F97F1);
+	text-align: center;
 }
 
 .about-heading h2
@@ -1505,10 +1506,10 @@ p
 {
 	padding: 0px 10px 0px 10px;
 }
-.about-heading h2
+/*.about-heading h2
 {
 	font-size: 15px;
-}
+}*/
 .about-para
 	{
 	font-size: 14px;
@@ -1606,7 +1607,7 @@ p
 
 	.about-heading h2
 	{
-	font-size: 12px;
+	font-size: 10px;
 	}
 
 	.about-para
