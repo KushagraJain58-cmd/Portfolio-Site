@@ -128,14 +128,6 @@ p
   display: block;
 }
 
-.hamburger
-{
-	/*display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;*/
-	/*float: right;*/
-}
-
 .sml-blog
 {
 	border:none;
@@ -420,6 +412,12 @@ p
 
 
 .soul
+{ 
+	height: 100%;
+	width: 400px;
+	cursor: pointer;
+}
+.soul-2
 { 
 	height: 100%;
 	width: 400px;
@@ -811,10 +809,6 @@ p
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.dropdown:hover .dropbtn {
- /* background-color: #3e8e41;*/
 }
 
 .work-kmore
@@ -1244,12 +1238,6 @@ p
 	.contacts
 	{
 		font-size: 13px;
-	}
-	.left-head
-	{
-		/*display: flex;
-		justify-content: center;
-		align-items: center;*/
 	}
 	.head-logo
 	{
