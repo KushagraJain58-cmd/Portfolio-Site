@@ -263,7 +263,7 @@ p
 	font-weight: 100;
 	border-bottom: 2px solid #1000AF;
 	border-right: 2px solid #1000AF;
-	width: 700px;
+	width: 1000px;
 	height: 100px;
 	letter-spacing: 7px;
 	text-align: center;
@@ -278,12 +278,12 @@ p
 
 .book-main-whole
 {
-	margin: 50px 0px 50px 0px;
+	margin: 50px 30px 50px 30px;
 }
 
 .book-back
 {
-	background-image: url(img/book_background.jpg);
+	background-image: url(img/book_background-3.png);
 	object-fit: cover;
 }
 
@@ -299,7 +299,7 @@ p
 {
 	/*margin-right: -100px;*/
 	height: 700px;
-	width: 150em;
+	width: 300em;
 }
 
 .book-about-img img
@@ -352,6 +352,14 @@ p
 	font-size: 20px;
 }
 
+.amazon-whole
+{
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	column-gap: 10rem;
+}
+
 .amazon
 {
 	display: flex;
@@ -360,11 +368,47 @@ p
 	margin-top: 100px;
 }
 
+
 .amazon img
 {
-	height: 100px;
 	width: 200px;
 }
+
+.kindle a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.look
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
+
+.look img
+{
+	
+}
+.look-inside-img
+{
+	width: 100px;
+}
+
+.look-inside
+{
+	/* height: 50px; */
+	width: 150px;
+}
+/* .look-inside-img
+{
+	width: 10px;
+} */
 
 .book-imgs
 {
@@ -426,7 +470,7 @@ p
     margin: 0;
 }
 
-.book-poster
+/* .book-poster
 {
 	margin: 0px 0px 0px 0px;
 }
@@ -436,6 +480,34 @@ p
 	object-fit: cover;
 	height: 100%;
 	width: 100%;
+} */
+.carousel-inner
+{
+	width: 100%;
+}
+
+.image-container
+{
+	width: 60%;
+	margin-left: 150px;
+}
+.image-container img
+{
+	height: 40em;
+	width: 80%;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-icon
+{
+	color: #000;
+}
+.icon-arrow
+{
+
 }
 
 .my-poems
