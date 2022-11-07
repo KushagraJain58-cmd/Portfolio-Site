@@ -129,14 +129,6 @@ p
   display: block;
 }
 
-.hamburger
-{
-	/*display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;*/
-	/*float: right;*/
-}
-
 .sml-blog
 {
 	border:none;
@@ -195,7 +187,7 @@ p
 	justify-content: center;
 	align-items: center;
 	column-gap: 6%;
-	margin-right: 50px: 
+	margin-right: 50px;
 }
 
 .blog, .podcast,
@@ -390,11 +382,6 @@ p
 	margin-top: 100px;
 }
 
-
-.look img
-{
-	
-}
 .look-inside-img
 {
 	width: 100px;
@@ -423,7 +410,7 @@ p
 	align-items: center;
 }
 
-..book-imgs-heading h1
+.book-imgs-heading h1
 {
 	margin: 0px 20px 0px 20px;
 }
@@ -504,10 +491,6 @@ p
 .c-icon
 {
 	color: #000;
-}
-.icon-arrow
-{
-
 }
 
 .my-poems
