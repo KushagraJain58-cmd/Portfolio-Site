@@ -255,9 +255,69 @@ p
 }
 
 /* 100% Image Width on Smaller Screens */
+@media(max-width:800px)
+{
+	.book-content
+	{
+		flex-direction: column;
+	}
+	.book-para{
+		margin-top: 40px;
+	}
+}
 @media only screen and (max-width: 700px) {
-  .modal-content {
+  /* .modal-content {
     width: 100%;
+  } */
+  .book-content-img
+  {
+	height: 20rem;
+  }
+}
+@media (max-width:600px)
+{
+	.modal-content h1{
+		font-size: 1.5rem;
+	}
+	.book-content-img
+  {
+	height: 15rem;
+  }
+  .book-para p{
+	font-size: 0.8rem;
+  }
+}
+@media (max-width:400px)
+{
+	.book-para{
+		margin-top: 20px;
+	}
+	.amazon img {
+    height: 100%;
+    width: 90px;
+	}	
+	.look-inside
+	{
+		width: 100px;
+	}
+	.look-inside-img {
+    width: 50px;
+	}
+	.amazon-whole {
+    column-gap: 2rem;
+}
+}
+@media (max-width:350px)
+{
+	.modal-content h1{
+		font-size: 1rem;
+	}
+	.book-content-img
+  {
+	height: 13rem;
+  }
+  .book-para p{
+	font-size: 0.6rem;
   }
 }
 /* POPUP CLOSED */
