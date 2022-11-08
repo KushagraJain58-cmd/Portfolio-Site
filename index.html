@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- <div class="whole"> -->
-		
+		<div class="popup">
 		<!---------- HEADER opened----------->
 		<div class="topnav">
 			<div class="sml-head">
@@ -86,25 +86,46 @@
 				</div>
 			</div>
 			<!------- Mid Bar closed ------->
-
-			<!-- MODAL OF BOOK -->
-		<h2>Modal Example</h2>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div
-		<!-- MODAL OF BOOK ENDED -->
-
+			<!------- MODAL OPEN --------->
+			<div class="c-btn">
+                    <!-- <button id="myImg" class="button button-flex btn-img"  onclick="image(0)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button> -->
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="spanning(0)">&times;</span>
+                        <!-- <img class="modal-content" src="./my_story/images/tecknoxian.jpg"> -->
+						<div class="modal-content">
+							<h1>Living One Day At a Time</h1>
+							<div class="book-content">
+								<img class="book-content-img" src="./my_story/images/book1.jpg">
+								<div class="book-para">
+									<p>What if I die tomorrow?<br><br>
+	We have all pondered over this question at least once in our lifetime. Sometimes, we say it jokingly, but sometimes just the thought of it starts haunting our minds. This is what happened during Covid times. When we could see numerous people dying around us, this thought felt a lot more real.  There were deaths and misery, but also love, togetherness, passion, and a will to overcome that phase. The pandemic gave us thousands of stories brewing in every home and even on the streets.<br><br>
+	This book is a collection of 10 fiction stories inspired by real events trying to capture every element of the pandemic, whether its hope, migration, love, loss of someone, career, passion, or meaning of family. These stories are for every common person who would be able to relate to and understand others' pain and hope.
+	<br><br>The mantra that kept us sane during those times was “Living one day at a time”. Sometimes, we get so caught up in planning our future or carrying the burden of our past that we forget to live today. These stories will make you realize the value of this one day and cherish it.  Let’s live one day at a time!</p>
+									<div class="amazon-whole">
+										<div class="amazon">
+											<a href="https://www.amazon.in/Living-One-Day-at-Time/dp/B0BJ28RPZ4/ref=mp_s_a_1_1?crid=3568SRO595US9&keywords=living+one+day+at+a+time+book&qid=1667214465&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=living+one+%2Caps%2C426&sr=8-1
+" target="_blank">
+											<img src="data:image/jpeg;base64,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">
+										</a>
+										</div>
+										<div class="look kindle">
+											<a href="https://www.amazon.in/Living-One-Day-at-Time/dp/B0BJ28RPZ4/ref=mp_s_a_1_1?crid=3568SRO595US9&keywords=living+one+day+at+a+time+book&qid=1667214465&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=living+one+%2Caps%2C426&sr=8-1&asin=B0BJBQ4F28&revisionId=9c5f320d&format=1&depth=1" target="_blank">
+												<img alt="Look inside this book." src="https://m.media-amazon.com/images/G/01/digital/sitb/sticker/sitb-sticker-v3-xsmall.png" class="look-inside" id="ebooksSitbLogoImg" style="user-select: auto;">
+												<img class="look-inside-img" src="./my_story/images/book1.jpg">
+											</a>
+									
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+                        <div id="caption"></div>
+                    </div>
+                </div>
+			<!------- MODAL CLOSED--------->
 			<!------- About page ----------->
 			<div class="about">
 				<div class="about-img">
@@ -253,5 +274,19 @@
 		
 </script>
 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script>
+        // Get the modal
+        var modal = document.querySelectorAll(".modal");
+
+        function image(i)
+        {
+            modal[i].style.display = "block";
+        }
+        function spanning(j)
+        {
+            modal[j].style.display = "none";
+        }
+        </script>
+</div>
 </body>
 </html>
